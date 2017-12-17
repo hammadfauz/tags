@@ -1,0 +1,34 @@
+{
+  "name": "tags",
+  "version": "1.0.0",
+  "description": "React tag and tag container component to display tag cloud and add/remove tags",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [
+    "React",
+    "Popover",
+    "Menu"
+  ],
+  "author": "hammad.fauz",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-fontawesome": "^1.6.1",
+    "react_menuitem": "^1.0.0",
+    "react_popover": "^1.0.0",
+    "textfield": "^1.0.3",
+    "webpack": "^3.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hammadfauz/tags.git"
+  }
+}
