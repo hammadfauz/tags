@@ -7,8 +7,20 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname,'dist'),
-    filename: '[name].js'
+    filename: '[name].js',
+    library : 'Tags',
+    libraryTarget : 'umd'
   },
+  externals : [
+    {
+      'react' : {
+        root : 'React',
+        commonjs2 : 'react',
+        commonjs : 'react',
+        amd : 'react'
+      }
+    }
+  ],
   module: {
       loaders: [
           { test: /\.(js?)$/, exclude: /node_modules/, loader: require.resolve('babel-loader'), query: {cacheDirectory: true, presets: ['es2015', 'react', 'stage-2']} }

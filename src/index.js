@@ -154,7 +154,7 @@ class TagList extends React.Component {
   }
 }
 
-module.exports = {
-  Tag : Tag,
-  TagList : TagList
+export  {
+  Tag,
+  TagList
 }
