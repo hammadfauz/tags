@@ -15,14 +15,19 @@ class Tag extends React.Component {
       self.setState({shown : true});
     },100);
   }
+  componentDidUpdate () {
+    const self = this;
+    if (this.state.shown === false &&
+      typeof this.props.onRemove === 'function') {
+      window.setTimeout(function () {
+        self.props.onRemove();
+      },300);
+    }
+  }
   handleRemove () {
     if (typeof this.props.onRemove === 'function') {
       const self = this;
-      this.setState({shown : false},function () {
-        window.setTimeout(function () {
-          self.props.onRemove();
-        },300);
-      });
+      this.setState({shown : false});
     }
   }
   render () {

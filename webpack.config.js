@@ -26,5 +26,5 @@ module.exports = {
           { test: /\.(js?)$/, exclude: /node_modules/, loader: require.resolve('babel-loader'), query: {cacheDirectory: true, presets: ['es2015', 'react', 'stage-2']} }
       ]
   },
-  devtool : 'eval'
+  devtool : 'source-map'
 };
