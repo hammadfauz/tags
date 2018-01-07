@@ -498,7 +498,7 @@ var Tag = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Tag.__proto__ || Object.getPrototypeOf(Tag)).call(this, props));
 
     _this.state = {
-      shown: false
+      shown: true
     };
     _this.handleRemove = _this.handleRemove.bind(_this);
     return _this;

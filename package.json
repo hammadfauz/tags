@@ -1,6 +1,6 @@
 {
   "name": "react_tags",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React tag and tag container component to display tag cloud and add/remove tags",
   "main": "dist/index.js",
   "scripts": {

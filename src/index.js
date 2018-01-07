@@ -5,7 +5,7 @@ class Tag extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      shown : false
+      shown : true 
     };
     this.handleRemove = this.handleRemove.bind(this);
   }
